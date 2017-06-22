@@ -1,4 +1,7 @@
 class Employee:
+    '''
+    doc
+    '''
     classstr="employee"
     def __init__(self,name,pay):
         self.name=name

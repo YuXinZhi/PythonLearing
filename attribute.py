@@ -1,4 +1,5 @@
 from  demo import *
+
 print(Employee.__name__)    #类名
 print(Employee.__doc__)     #类的文档字符串
 print(Employee.__dict__)    #类的属性（包含一个字典，由累的数据属性组成）

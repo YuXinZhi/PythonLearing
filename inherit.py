@@ -16,7 +16,7 @@ class Parent:   #定义父类
 
 class Child(Parent):    #定义子类
     def __init__(self):
-        Parent.__init__(self)
+        Parent()
         print("child's constructed method")
 
     def childMethod(self):

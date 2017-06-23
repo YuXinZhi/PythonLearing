@@ -48,3 +48,18 @@
 
 　　有些C编译系统可能不完全提供所有这些功能，有的C版本不用"r+","w+","a+",而用"rw","wr","ar"等，读者注意所用系统的规
 '''
+
+'''
+    c标准库
+    fopen
+    fclose
+    fread
+    fwrite
+    fprintf
+    fgets
+    fputs
+    fgetc
+    fputc
+    fseek
+    fflush
+'''

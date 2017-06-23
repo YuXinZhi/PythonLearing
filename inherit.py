@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 '''
 继承
 
@@ -8,17 +8,17 @@ class Parent:
     parent class
     '''
     parentAttr = 100
-=======
+
 class Parent:   #定义父类
 
     parentAttr = 100
 
->>>>>>> origin/master
+
     def __init__(self):
         print("parent's construted method")
 
     def parentMethod(self):
-<<<<<<< HEAD
+
         print("parent's method")
 
     def setAttr(self, attr):
@@ -37,7 +37,7 @@ class Child:
 
     def childMethod():
 
-=======
+
         print("parentMehtod")
 
     def setAttr(self,attr):
@@ -53,4 +53,4 @@ class Child(Parent):    #定义子类
 
     def childMethod(self):
         print("childMethod")
->>>>>>> origin/master
+

@@ -63,3 +63,6 @@
     fseek
     fflush
 '''
+import os
+dir=os.listdir(os.getcwd())
+print(dir)

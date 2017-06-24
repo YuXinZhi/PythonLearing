@@ -9,12 +9,8 @@ while True:
     connection,address=sockobj.accept()
     print("connect by:",address)
     while True:
-        data=connection.recv(1024)
-        print(data)
-        e = 'echo' + data
-        e = e.encode()
-        print(type(e))
+        data = connection.recv(1024)
         if not data:
             break
-        connection.send(e)
+        connection.send("echo:".encode()+data)
     connection.close()

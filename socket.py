@@ -1,5 +1,16 @@
-from socket import *
+import socket
+
 myhost=''
 myport=8080
-#sockobj=socket(AF_INET,SOCK_STREAM)
-#sockobj.listen(128)
+sockobj=socket(AF_INET,SOCK_STREAM)
+sockobj.bind(myhost,myport)
+sockobj.listen(128)
+while True:
+    connection,address=sockobj.accept()
+    print("connect by:",address)
+    while True:
+        data=connection.recv(1024)
+        if not data:
+            break
+        connection.send("echo"+data)
+    connection.close()
